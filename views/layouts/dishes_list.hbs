@@ -1,0 +1,16 @@
+{{>header}}
+<div>
+    <div class="dish-list">
+    <h1>List of dishes</h1>
+    {{#each result}}
+    <ul class="list-group">
+  <li class="list-group-item">
+    <div class="dishes" data-id="{{id}}">
+        <h3>{{name}}</h3>
+        <li>{{price}}</li>
+        <li>{{category_ID}}</li>
+        <li>{{price}}</li>
+    </div></li>
+</ul>
+    {{/each}}
+</div>
