@@ -1,0 +1,52 @@
+
+
+<table class="table table-secondary">
+
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="text-center">Dish Name</th>
+            <th scope="col" class="text-center">Price</th>
+            <th scope="col" class="text-center">Category</th>
+            <th scope="col" class="text-center">Origin</th>
+            <th scope="col" class="text-center">Ingredient</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each rows}}
+
+        <tr>
+                    
+            <td class="text-center">{{this.name}}</td>
+            <td class="text-center"> {{this.price}} </td>
+            <td class="text-center"> {{this.category}} </td>
+            <td class="text-center"> {{this.origins}} </td>
+            <td class="text-center"> {{this.ingredients}} </td>
+
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+</table>
+
+
+{{#each rows}}
+<dl class="row">
+    <dt class="col-sm-3">Dish Name</dt>
+    <dd class="col-sm-9">{{this.name}}</dd>
+
+    <dt class="col-sm-3">Price</dt>
+    <dd class="col-sm-9">{{this.price}}</dd>
+
+    <dt class="col-sm-3">Category</dt>
+    <dd class="col-sm-9">{{this.category}}</dd>
+
+    <dt class="col-sm-3">Origin</dt>
+    <dd class="col-sm-9">{{this.origins}}</dd>
+
+    <dt class="col-sm-3">Ingredients</dt>
+    <dd class="col-sm-9">{{this.ingredients}}</dd>
+</dl>
+{{/each}}
+

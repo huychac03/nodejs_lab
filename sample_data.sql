@@ -1,0 +1,157 @@
+-- Insert data into Category table
+INSERT INTO Category (name) VALUES
+('Appetizers'),
+('Main Dishes'),
+('Desserts'),
+('Soups'),
+('Salads');
+
+-- Insert data into Dish table
+INSERT INTO Dish (category_ID, name, available, price) VALUES
+(1, 'Chicken Wings', true, 8.99),
+(2, 'Beef Steak', true, 19.99),
+(2, 'Sausage Pizza', true, 14.99),
+(3, 'Chocolate Cake', true, 12.99),
+(3, 'Jelly', true, 5.99),
+(2, 'Spaghetti', true, 11.99),
+(1, 'Mozzarella Sticks', true, 7.99),
+(2, 'Burger', true, 9.99),
+(4, 'Pumpkin Soup', true, 8.99),
+(4, 'Crab Soup', true, 10.99),
+(5, 'Vegetable Salad', true, 6.99),
+(2, 'Beef Curry', true, 15.99),
+(2, 'Salmon with Passion Fruit Sauce', true, 18.99),
+(1, 'Bruschetta', true, 6.99),
+(2, 'Duck Breast with Orange Sauce', true, 17.99),
+(3, 'Seafood Pizza', true, 16.99);
+
+-- Insert data into Origin table
+INSERT INTO Origin (name) VALUES
+('Italian'),
+('American'),
+('French'),
+('Japanese'),
+('Mexican');
+
+-- Insert data into Dish_Origin table (continued)
+INSERT INTO Dish_Origin (dish_ID, origin_ID) VALUES
+(1, 2), (1, 3),
+(2, 4),
+(3, 1), (3, 2),
+(4, 5),
+(5, 1), (5, 4),
+(6, 1), (6, 2),
+(7, 2),
+(8, 3), (8, 4),
+(9, 1), (9, 4),
+(10, 1), (10, 5),
+(11, 5),
+(12, 1), (12, 4),
+(13, 1), (13, 4),
+(14, 1), (14, 3),
+(15, 3),
+(16, 1), (16, 2);
+
+-- Insert data into Ingredient table
+INSERT INTO Ingredient (name, unit) VALUES
+('Pizza Dough', 'grams'),
+('Cheese', 'grams'),
+('Mozzarella Cheese', 'grams'),
+('Tomato Sauce', 'grams'),
+('Sausage', 'grams'),
+('Shrimp', 'grams'),
+('Crab', 'grams'),
+('Seafood Sauce', 'grams'),
+('Pumpkin', 'grams'),
+('Beef', 'grams'),
+('Salmon', 'grams'),
+('Passion Fruit Sauce', 'grams'),
+('Bread', 'pieces'),
+('Duck Breast', 'grams'),
+('Garlic', 'cloves'),
+('Onion', 'pieces'),
+('Olive Oil', 'ml'),
+('Lettuce', 'grams'),
+('Tomatoes', 'grams'),
+('Cucumber', 'grams'),
+('Mayonnaise', 'grams'),
+('Mustard', 'grams'),
+('Ketchup', 'grams'),
+('Bread Bun', 'pieces'),
+('Potatoes', 'grams'),
+('Carrots', 'grams'),
+('Coriander', 'grams'),
+('Lime', 'pieces'),
+('Orange Saurce', 'grams'),
+('Chicken Wings', 'grams'),
+('Special fried dough', 'grams'),
+('Black pepper', 'grams'),
+('Flour', 'grams'),
+('Chocolate', 'grams'),
+('Jelly', 'grams'),
+('Ground beef', 'grams'),
+('Spaghetti', 'grams'),
+('Egg', 'grams');
+
+-- Insert data into Warehouse table
+INSERT INTO Warehose (ingredient_ID, importDate, expiredDate, quantity) VALUES
+(1, '2023-01-01', '2023-06-01', 500),
+(2, '2023-01-01', '2023-06-01', 700),
+(3, '2023-01-01', '2023-06-01', 600),
+(4, '2023-01-01', '2023-06-01', 800),
+(5, '2023-01-01', '2023-06-01', 300),
+(6, '2023-01-01', '2023-06-01', 400),
+(7, '2023-01-01', '2023-06-01', 200),
+(8, '2023-01-01', '2023-06-01', 300),
+(9, '2023-01-01', '2023-06-01', 400),
+(10, '2023-01-01', '2023-06-01', 500),
+(11, '2023-01-01', '2023-06-01', 600),
+(12, '2023-01-01', '2023-06-01', 700),
+(13, '2023-01-01', '2023-06-01', 800),
+(14, '2023-01-01', '2023-06-01', 900),
+(15, '2023-01-01', '2023-06-01', 1000),
+(16, '2023-01-01', '2023-06-01', 1100),
+(17, '2023-01-01', '2023-06-01', 400),
+(18, '2023-01-01', '2023-06-01', 300),
+(19, '2023-01-01', '2023-06-01', 500),
+(20, '2023-01-01', '2023-06-01', 200),
+(21, '2023-01-01', '2023-06-01', 300),
+(22, '2023-01-01', '2023-06-01', 400),
+(23, '2023-01-01', '2023-06-01', 200),
+(24, '2023-01-01', '2023-06-01', 150),
+(25, '2023-01-01', '2023-06-01', 250),
+(26, '2023-01-01', '2023-06-01', 500),
+(27, '2023-01-01', '2023-06-01', 400),
+(28, '2023-01-01', '2023-06-01', 300),
+(29, '2023-01-01', '2023-06-01', 100),
+(30, '2023-01-01', '2023-06-01', 100),
+(31, '2023-01-01', '2023-06-01', 100),
+(32, '2023-01-01', '2023-06-01', 100),
+(33, '2023-01-01', '2023-06-01', 100),
+(34, '2023-01-01', '2023-06-01', 100),
+(35, '2023-01-01', '2023-06-01', 100),
+(36, '2023-01-01', '2023-06-01', 100),
+(37, '2023-01-01', '2023-06-01', 100),
+(38, '2023-01-01', '2023-06-01', 100);
+
+-- Insert data into Recipe table (continued)
+INSERT INTO Recipe (dish_ID, ingredient_ID) VALUES
+(1, 30), (1, 31),
+(2, 10), (2, 32),
+(3, 1), (3, 2), (3, 3), (3, 4), (3, 5),
+(4, 33), (4, 34),
+(5, 35),
+(6, 36), (6, 37), (6, 16), (6, 17), (6, 4), (6, 2),
+(7, 3), (7, 15), (7, 32), (7, 33), (7, 38),
+(8, 2), (8, 16), (8, 17), (8, 19), (8, 20), (8, 21), (8, 32), (8, 18),
+(9, 9), (9, 17), (9, 18), (9, 24), (9, 25), (9, 26), (9, 27),
+(10, 7), (10, 15), (10, 16), (10, 27) ,(10, 24), (10, 25), (10, 26),
+(11, 12), (11, 17), (11, 27), (11, 28), (11, 18), (11, 21),
+(12, 10), (12, 17), (12, 18), (12, 19), (12, 13), (12, 16),
+(13, 11), (13, 12),
+(14, 16), (14, 17), (14, 19), (14, 13),
+(15, 14), (15, 28), (15, 29),
+(16, 1), (16, 2), (16, 3), (16, 4), (16, 6), (16, 7), (16, 8);
+
+
+
