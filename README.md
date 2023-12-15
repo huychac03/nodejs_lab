@@ -2,7 +2,7 @@
 
 ## Repository link
 ```
-https://github.com/huychac03/nodejs_lab/tree/c2d6665aed59f455a36bb18e9fd53fdad3893d45
+https://github.com/huychac03/nodejs_lab/tree/huy
 ```
 
 ## Edit .env file
