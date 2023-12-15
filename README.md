@@ -30,13 +30,16 @@ To run this project, install it locally using npm, run these commands in order:
 
 ```
 $ npm install
-$ npm start
 ```
 
 ## Running
+```
+$ npm start
+```
 Type (DB_HOST):(PORT) on your browser where DB_HOST and PORT are the variables in ".env" file
 
 For example
 ```
 localhost:5000
 ```
+
