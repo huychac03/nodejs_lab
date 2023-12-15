@@ -1,4 +1,4 @@
--- CREATE database eMenu;
+CREATE database eMenu;
 
 USE eMenu;
 
@@ -7,7 +7,7 @@ CREATE TABLE  Category (
 	name	nvarchar(50),
 	primary key(ID)
 );
-    
+
 CREATE TABLE Dish (
 	ID	int AUTO_INCREMENT,
 	category_ID	int,
@@ -18,7 +18,7 @@ CREATE TABLE Dish (
 	foreign key(category_ID) references Category (ID) 
 		on delete set null
 );
-	
+
 CREATE TABLE Origin (
 	ID	int AUTO_INCREMENT,
 	name	nvarchar(50),
@@ -65,3 +65,4 @@ CREATE TABLE Recipe (
     UNIQUE (dish_ID, ingredient_ID)
 );
 
+    

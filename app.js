@@ -65,7 +65,7 @@ pool.getConnection((err, connection) => {
 });
 
 
-const routes = require('./server/routes/users');
+const routes = require('./server/routes/menu');
 app.use('/', routes);
 
 
