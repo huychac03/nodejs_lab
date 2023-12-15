@@ -1,0 +1,29 @@
+<table class="table table-secondary">
+
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="text-center">Name</th>
+            <th scope="col" class="text-center">Unit</th>
+            <th scope="col" class="text-center">Import Date</th>
+            <th scope="col" class="text-center">Ex Date</th>
+            <th scope="col" class="text-center">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each rows}}
+
+        <tr>
+                    
+            <td class="text-center">{{this.name}}</td>
+            <td class="text-center"> {{this.unit}} </td>
+            <td class="text-center"> {{this.importDate}} </td>
+            <td class="text-center"> {{this.expiredDate}} </td>
+            <td class="text-center"> {{this.quantity}} </td>
+
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+</table>
